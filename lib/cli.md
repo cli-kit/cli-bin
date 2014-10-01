@@ -9,14 +9,14 @@ Command line interface compiler.
 
 ## Options
 
-* `-i, --input [file...]`: Markdown input files.
-* `-o, --output [file]`: Output javascript file.
+* `-i, --input [file...]`: Input files.
+* `-o, --output [file]`: Output file.
 * `pkg: -k, --package [file]`: Use package descriptor.
 * `-m, --module [file]`: Load program from module.
 * `nm: -n, --name [name]`: Set program name.
 * `-v, --semver [semver]`: Set program version.
 * `-d, --desc [desc]`: Set program description.
-* `-p, --print`: Print compiled javascript.
+* `-p, --print`: Print result.
 * `-f, --force`: Force file overwrite.
 
 ## Files
