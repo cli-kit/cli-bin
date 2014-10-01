@@ -79,6 +79,20 @@
         ]
       },
       {
+        "title": "Usage",
+        "bin": "cli",
+        "type": "code",
+        "stderr": true,
+        "trim": true
+      },
+      {
+        "title": "Help",
+        "bin": "cli --help",
+        "type": "code",
+        "stderr": true,
+        "trim": true
+      },
+      {
         "inc": [
           "license.md"
         ]

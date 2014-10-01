@@ -4,14 +4,14 @@ Table of Contents
 * [Cli](#cli)
   * [Install](#install)
   * [Test](#test)
+  * [Usage](#usage)
+  * [Help](#help)
   * [License](#license)
 
 Cli
 ===
 
-Executables for the [command](https://github.com/freeformsystems/cli-command) module, a component of the [toolkit](https://github.com/freeformsystems/cli-toolkit).
-
-* `cli`: Compiles markdown source to javascript.
+Compiler executable for the [command](https://github.com/freeformsystems/cli-command) module, a component of the [toolkit](https://github.com/freeformsystems/cli-toolkit).
 
 ## Install
 
@@ -23,6 +23,53 @@ npm i cli-bin
 
 ```
 npm test
+```
+
+## Usage
+
+```
+Usage: cli <command>
+
+where <command> is one of:
+    compile, c, help
+
+cli --help <cmd>         quick help on <cmd>
+cli help <cmd>           documentation for <cmd>
+
+cli@0.1.1 /Users/cyberfunk/git/cli/bin
+```
+
+## Help
+
+```
+Usage: cli <command> [-pf] [--color|--no-color] [-p|--print]
+           [-f|--force] [--help] [--version] [-i|--input=<file...>]
+           [-o|--output=<file>] [-k|--package=<file>]
+           [-n|--name=<name>] [-v|--semver=<semver>]
+           [-d|--desc=<desc>] <args>
+
+Command line interface compiler.
+
+Commands:
+ compile, c               Compile markdown to javascript.
+ help                     Show help for commands.
+
+Options:
+ -v, --semver=[semver]    Set program version.
+     --[no]-color         Enable or disable terminal colors.
+ -o, --output=[file]      Output javascript file.
+ -k, --package=[file]     Use package descriptor.
+ -n, --name=[name]        Set program name.
+ -i, --input=[file...]    Markdown input files.
+ -d, --desc=[desc]        Set program description.
+ -p, --print              Print compiled javascript.
+ -f, --force              Force file overwrite.
+     --help               Display this help and exit.
+     --version            Print version and exit.
+
+Report bugs to muji <noop@xpm.io>.
+
+cli@0.1.1 /Users/cyberfunk/git/cli/bin
 ```
 
 ## License
