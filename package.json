@@ -1,7 +1,7 @@
 {
   "name": "cli-bin",
   "version": "0.1.2",
-  "description": "Executables for the cli toolkit",
+  "description": "Compiler executable for the cli toolkit",
   "author": "muji <noop@xpm.io>",
   "repository": {
     "type": "git",
