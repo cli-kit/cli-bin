@@ -1,4 +1,4 @@
-.TH "CLI" "1" "October 2014" "cli 0.1.1" "User Commands"
+.TH "CLI" "1" "October 2014" "cli 0.1.2" "User Commands"
 .SH "NAME"
 cli
 .SH "USAGE"
@@ -46,6 +46,25 @@ Command line interface compiler.
 .IP "\[ci]" 4
 \fB\-\-version\fR: Print version and exit.
 .EL
+.SH "FILES"
+.PP
+If a \fBpackage.json\fR file exists in the current working directory and contains a \fBcli.compiler\fR object, configuration is read from the definition. Any options specified on the command line override the configuration:
+.PP
+"cli": {
+.br
+  "compiler": {
+.br
+    "input": [
+.br
+      "./path/to/doc.md"
+.br
+    ],
+.br
+    "output": "./lib/compiled.js"
+.br
+  }
+.br
+}
 .SH "BUGS"
 .PP
 Report bugs to muji noop@xpm.io.
