@@ -51,6 +51,9 @@
     "node >= 0.10.21"
   ],
   "scripts": {
+    "docs": "npm run manual && npm run readme && npm run cheatsheet",
+    "clean-man": "rm -fv ./doc/man/*.1",
+    "manual": "npm run clean-man && manpage --output ./doc/man ./bin/cli",
     "readme": "mdp --force -v",
     "test": "NODE_ENV=test istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/spec"
   },

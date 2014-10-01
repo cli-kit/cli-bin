@@ -1,0 +1,51 @@
+.TH "CLI" "1" "October 2014" "cli 0.1.1" "User Commands"
+.SH "NAME"
+cli
+.SH "USAGE"
+
+.SP
+cli <command> [\-pf] [\-\-color|\-\-no\-color] [\-p|\-\-print] [\-f|\-\-force]
+.br
+    [\-\-help] [\-\-version] [\-i|\-\-input=<file...>] [\-o|\-\-output=<file>]
+.br
+    [\-k|\-\-package=<file>] [\-n|\-\-name=<name>] [\-v|\-\-semver=<semver>]
+.br
+    [\-d|\-\-desc=<desc>] <args>
+.SH "DESCRIPTION"
+.PP
+Command line interface compiler.
+.SH "COMMANDS"
+.BL
+.IP "\[ci]" 4
+\fBcompile, c\fR: Compile markdown to javascript.
+.IP "\[ci]" 4
+\fBhelp\fR: Show help for commands.
+.EL
+.SH "OPTIONS"
+.BL
+.IP "\[ci]" 4
+\fB\-v, \-\-semver=[semver]\fR: Set program version.
+.IP "\[ci]" 4
+\fB\-\-[no]\-color\fR: Enable or disable terminal colors.
+.IP "\[ci]" 4
+\fB\-o, \-\-output=[file]\fR: Output javascript file.
+.IP "\[ci]" 4
+\fB\-k, \-\-package=[file]\fR: Use package descriptor.
+.IP "\[ci]" 4
+\fB\-n, \-\-name=[name]\fR: Set program name.
+.IP "\[ci]" 4
+\fB\-i, \-\-input=[file...]\fR: Markdown input files.
+.IP "\[ci]" 4
+\fB\-d, \-\-desc=[desc]\fR: Set program description.
+.IP "\[ci]" 4
+\fB\-p, \-\-print\fR: Print compiled javascript.
+.IP "\[ci]" 4
+\fB\-f, \-\-force\fR: Force file overwrite.
+.IP "\[ci]" 4
+\fB\-\-help\fR: Display this help and exit.
+.IP "\[ci]" 4
+\fB\-\-version\fR: Print version and exit.
+.EL
+.SH "BUGS"
+.PP
+Report bugs to muji noop@xpm.io.
