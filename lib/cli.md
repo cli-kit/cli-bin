@@ -12,6 +12,7 @@ Command line interface compiler.
 * `-i, --input [file...]`: Markdown input files.
 * `-o, --output [file]`: Output javascript file.
 * `pkg: -k, --package [file]`: Use package descriptor.
+* `-m, --module [file]`: Load program from module.
 * `nm: -n, --name [name]`: Set program name.
 * `-v, --semver [semver]`: Set program version.
 * `-d, --desc [desc]`: Set program description.

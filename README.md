@@ -36,7 +36,7 @@ where <command> is one of:
 cli --help <cmd>         quick help on <cmd>
 cli help <cmd>           documentation for <cmd>
 
-cli@0.1.1 /Users/cyberfunk/git/cli/bin
+cli@0.1.2 /Users/cyberfunk/git/cli/bin
 ```
 
 ## Help
@@ -45,8 +45,8 @@ cli@0.1.1 /Users/cyberfunk/git/cli/bin
 Usage: cli <command> [-pf] [--color|--no-color] [-p|--print]
            [-f|--force] [--help] [--version] [-i|--input=<file...>]
            [-o|--output=<file>] [-k|--package=<file>]
-           [-n|--name=<name>] [-v|--semver=<semver>]
-           [-d|--desc=<desc>] <args>
+           [-m|--module=<file>] [-n|--name=<name>]
+           [-v|--semver=<semver>] [-d|--desc=<desc>] <args>
 
 Command line interface compiler.
 
@@ -59,6 +59,7 @@ Options:
      --[no]-color         Enable or disable terminal colors.
  -o, --output=[file]      Output javascript file.
  -k, --package=[file]     Use package descriptor.
+ -m, --module=[file]      Load program from module.
  -n, --name=[name]        Set program name.
  -i, --input=[file...]    Markdown input files.
  -d, --desc=[desc]        Set program description.
@@ -69,7 +70,7 @@ Options:
 
 Report bugs to muji <noop@xpm.io>.
 
-cli@0.1.1 /Users/cyberfunk/git/cli/bin
+cli@0.1.2 /Users/cyberfunk/git/cli/bin
 ```
 
 ## License

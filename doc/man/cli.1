@@ -8,9 +8,9 @@ cli <command> [\-pf] [\-\-color|\-\-no\-color] [\-p|\-\-print] [\-f|\-\-force]
 .br
     [\-\-help] [\-\-version] [\-i|\-\-input=<file...>] [\-o|\-\-output=<file>]
 .br
-    [\-k|\-\-package=<file>] [\-n|\-\-name=<name>] [\-v|\-\-semver=<semver>]
+    [\-k|\-\-package=<file>] [\-m|\-\-module=<file>] [\-n|\-\-name=<name>]
 .br
-    [\-d|\-\-desc=<desc>] <args>
+    [\-v|\-\-semver=<semver>] [\-d|\-\-desc=<desc>] <args>
 .SH "DESCRIPTION"
 .PP
 Command line interface compiler.
@@ -32,6 +32,8 @@ Command line interface compiler.
 .IP "\[ci]" 4
 \fB\-k, \-\-package=[file]\fR: Use package descriptor.
 .IP "\[ci]" 4
+\fB\-m, \-\-module=[file]\fR: Load program from module.
+.IP "\[ci]" 4
 \fB\-n, \-\-name=[name]\fR: Set program name.
 .IP "\[ci]" 4
 \fB\-i, \-\-input=[file...]\fR: Markdown input files.
@@ -46,25 +48,6 @@ Command line interface compiler.
 .IP "\[ci]" 4
 \fB\-\-version\fR: Print version and exit.
 .EL
-.SH "FILES"
-.PP
-If a \fBpackage.json\fR file exists in the current working directory and contains a \fBcli.compiler\fR object, configuration is read from the definition. Any options specified on the command line override the configuration:
-.PP
-"cli": {
-.br
-  "compiler": {
-.br
-    "input": [
-.br
-      "./path/to/doc.md"
-.br
-    ],
-.br
-    "output": "./lib/compiled.js"
-.br
-  }
-.br
-}
 .SH "BUGS"
 .PP
 Report bugs to muji noop@xpm.io.
