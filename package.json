@@ -53,7 +53,7 @@
   "scripts": {
     "docs": "npm run manual && npm run readme && npm run cheatsheet",
     "clean-man": "rm -fv ./doc/man/*.1",
-    "manual": "npm run clean-man && manpage --output ./doc/man ./bin/cli",
+    "manual": "npm run clean-man && NODE_ENV=devel manpage --output ./doc/man ./bin/cli",
     "readme": "mdp --force -v",
     "test": "NODE_ENV=test istanbul cover _mocha -- -u bdd --recursive --bail --reporter list -A test/spec"
   },

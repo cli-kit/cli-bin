@@ -57,13 +57,13 @@ Commands:
 Options:
  -v, --semver=[semver]    Set program version.
      --[no]-color         Enable or disable terminal colors.
- -o, --output=[file]      Output javascript file.
+ -o, --output=[file]      Output file.
  -k, --package=[file]     Use package descriptor.
  -m, --module=[file]      Load program from module.
  -n, --name=[name]        Set program name.
- -i, --input=[file...]    Markdown input files.
+ -i, --input=[file...]    Input files.
  -d, --desc=[desc]        Set program description.
- -p, --print              Print compiled javascript.
+ -p, --print              Print result.
  -f, --force              Force file overwrite.
      --help               Display this help and exit.
      --version            Print version and exit.
