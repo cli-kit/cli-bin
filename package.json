@@ -19,7 +19,7 @@
   ],
   "directories": {
     "bin": "./bin",
-    "man": "./man"
+    "man": "./doc/man"
   },
   "keywords": [
     "cli",
